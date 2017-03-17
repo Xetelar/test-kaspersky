@@ -1,0 +1,35 @@
+.employees-table{
+  width: 100%;
+  border-collapse: collapse;
+
+  font-size: 14px;
+
+  &__header{
+    background: greenyellow;
+  }
+
+  &__cell{
+    padding: 4px 0;
+
+    font-weight: normal;
+    text-align: left;
+
+    &:first-child{
+      text-align: center;
+    }
+
+    &_header{
+      cursor: pointer;
+
+      color: #b4b4b4;
+
+      &.is-active{
+        color: #000;
+      }
+    }
+  }
+
+  .on-chosen{
+    background: aliceblue;
+  }
+}
