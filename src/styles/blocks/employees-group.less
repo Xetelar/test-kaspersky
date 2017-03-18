@@ -1,5 +1,7 @@
+@bdc: #cecece;
+
 .employees-group{
-  border: 1px solid #000;
+  border: 1px solid @bdc;
   padding: 10px 20px;
 
   &__header{
@@ -25,7 +27,7 @@
     margin-right: 5px;
 
     border-radius: 50px;
-    border: 1px solid #000;
+    border: 1px solid @bdc;
 
     &:last-child{
       margin-right: 0;
@@ -40,10 +42,10 @@
   }
 
   &__item{
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 
     padding: 20px;
-    border: 1px solid #000;
+    border: 1px solid @bdc;
 
     &:last-child{
       margin-bottom: 0;
@@ -102,6 +104,8 @@
 
   &__footer-txt{
     font-size: 18px;
-    color: deepskyblue;
+    color: #48a1de;
+
+    cursor: pointer;
   }
 }

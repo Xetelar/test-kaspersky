@@ -19,20 +19,21 @@ import utils from '../utils/base.js';
       <div class="employees__cell">
         <employees-table show={display=='table'} items={employees} handleSort="{handleSort.bind(this)}"/>
         <employees-blocks show={display=='blocks'} items={employees}/>
-        <employees-groups show={display=='groups'} items={employees}/>
+          <employees-groups show={display=='groups'} items={employees}/>
       </div>
     </div>
   </div>
 
 
   <script>
-    let currentDisplay = 'groups';
+    let currentDisplay = 'table';
 
     this.employees = opts.employees.slice();
-    this.displays = [{ name: 'table', text: 'Таблицей' }, { name: 'blocks', text: 'Блоками' }, {
-      name: 'groups',
-      text: 'По группам'
-    }];
+    this.displays = [
+      {name: 'table', text: 'Таблицей'},
+      {name: 'blocks', text: 'Блоками'},
+      {name: 'groups', text: 'По группам'}
+    ];
     this.display = currentDisplay;
 
 

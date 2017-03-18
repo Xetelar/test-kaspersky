@@ -44,7 +44,7 @@
 
 
   <script>
-    this.on('before-mount', function () {
+    this.on('update', function () {
       this.groupsEmployees = {};
 
       opts.items.forEach(el => {

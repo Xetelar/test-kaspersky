@@ -7,12 +7,12 @@
             <input type="checkbox" onchange={check}>
           </div>
           <div class="employees-block__cloud-cell">
-            <img  src="" alt="cloud">
+            <img  src="/data/images/cloud.png" alt="cloud">
           </div>
         </div>
         <span class="employees-block__item employees-block__item_name">{name}</span>
         <div class="employees-block__item">
-          <img src="" alt="photo">
+          <img src="/data/images/man.png" alt="photo">
         </div>
         <span class="employees-block__item">{position}</span>
         <span class="employees-block__item">{phone}</span>
